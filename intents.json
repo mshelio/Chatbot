@@ -1,0 +1,240 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Whats up",
+        "Hey",
+        "greetings"
+      ],
+      "responses": [
+        "Hello! Ready to transform your finances?",
+        "Good to see you again! Let's work on your money goals!",
+        "Hi there! How can I help with your financial journey today?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "cya",
+        "See you later",
+        "Goodbye",
+        "I am Leaving",
+        "Have a Good day",
+        "bye",
+        "cao",
+        "see ya"
+      ],
+      "responses": [
+        "Sad to see you go :( Remember: Every dollar counts toward your freedom!",
+        "Talk to you later! Stay focused on those Baby Steps!",
+        "Goodbye! Come back when you're ready to 'live like no one else'!"
+      ]
+    },
+    {
+      "tag": "role",
+      "patterns": [
+        "What can you do?",
+        "What are you?",
+        "What's your purpose?",
+        "What do you specialize in?",
+        "What kind of chatbot are you?",
+        "Can you help me with money?",
+        "Are you a financial advisor?",
+        "What topics do you cover?",
+        "What services do you provide?",
+        "What financial advice can you give?",
+        "How can you assist with finances?",
+        "What do you offer?",
+        "Tell me about your capabilities",
+        "What can you help with?",
+        "What’s your role?"
+      ],
+      "responses": [
+        "I'm a financial advice assistant specializing in budgeting, debt management, and investing.",
+        "I provide guidance on personal finance topics like saving, debt payoff, and financial planning.",
+        "My expertise is helping people achieve financial freedom through proven money management strategies."
+      ]
+    },
+    {
+      "tag": "debt_snowball",
+      "patterns": [
+        "How do I pay off debt?",
+        "How to repay the debt?",
+        "Explain the debt snowball",
+        "Which debt should I tackle first?",
+        "Paying debts",
+        "Debt payoff strategy",
+        "Order to pay off debts",
+        "List smallest debts first"
+      ],
+      "responses": [
+        "List debts smallest → largest balance. Attack #1 with 'gazelle intensity'—minimum payments on others. Every paid debt builds momentum! Lebanon adaption: Prioritize USD-denominated debts first 💥",
+        "The Debt Snowball Method: 1. List debts smallest to largest 2. Pay minimums on all except smallest 3. Attack smallest debt with intensity 4. Repeat until debt-free!"
+      ],
+      "function": "calculate_debt_snowball"
+    },
+    {
+      "tag": "emergency_fund",
+      "patterns": [
+        "What's a starter emergency fund?",
+        "How much should I save first?",
+        "What is a good way to save money?",
+        "Baby Step 1 amount",
+        "Beginner emergency fund",
+        "Initial safety net",
+        "help me set emergency fund"
+      ],
+      "responses": [
+        "Save $1,000 FAST ($500 if income <$20k). This stops small emergencies from derailing your debt payoff! Sell items or work overtime to fund this 🔒 *Baby Step 1*",
+        "Starter emergency fund: $1,000 immediately! Protects you from life's surprises so you can focus on debt payoff."
+      ]
+    },
+    {
+      "tag": "credit_card_advice",
+      "patterns": [
+        "Should I use credit cards?",
+        "How to build credit without debt?",
+        "Are credit cards necessary?",
+        "Debit vs credit cards",
+        "Credit score importance"
+      ],
+      "responses": [
+        "DEBT IS NOT A TOOL—cut up credit cards! Use debit cards instead. True wealth needs no credit score—mortgage lenders use 'manual underwriting' 🚫💳",
+        "Credit cards are a trap! As Dave Ramsey says: 'Debt is dumb, cash is king.' Stick to spending money you actually have."
+      ]
+    },
+    {
+      "tag": "baby_step_overview",
+      "patterns": [
+        "What are the baby steps?",
+        "List Dave Ramsey's steps",
+        "Explain the 7 baby steps",
+        "Financial peace plan",
+        "Ramsey method overview",
+        "Where to start with money makeover?"
+      ],
+      "responses": [
+        "The 7 Baby Steps: 1. $1k emergency fund → 2. Debt snowball → 3. 3-6 months expenses → 4. Invest 15% income → 5. College funding → 6. Pay off mortgage → 7. Build wealth & give! Start with Step 1 TODAY 💪"
+      ]
+    },
+    {
+      "tag": "full_emergency_fund",
+      "patterns": [
+        "3-6 months expenses?",
+        "Baby Step 3 amount",
+        "Post-debt savings target",
+        "Job loss protection fund",
+        "Complete emergency fund"
+      ],
+      "responses": [
+        "After debt freedom, save 3-6 months of ESSENTIAL expenses. Riskier jobs? Aim for 6 months. Lebanon tip: Store 50% in USD cash outside banking system 🛡️"
+      ]
+    },
+    {
+      "tag": "retirement_investing",
+      "patterns": [
+        "Invest 15% for retirement?",
+        "Best retirement accounts",
+        "Roth vs 401k priority",
+        "Baby Step 4 details",
+        "How much to invest?"
+      ],
+      "responses": [
+        "Invest 15% of GROSS income in: 1. 401(k) up to match → 2. Roth IRA → 3. Rest in 401(k). Use growth stock mutual funds—avoid single stocks! 📈"
+      ]
+    },
+    {
+      "tag": "lebanon_banking",
+      "patterns": [
+        "Protect money in Lebanon",
+        "Lebanese banking crisis",
+        "Withdraw USD from banks",
+        "Bank restrictions Lebanon",
+        "Dollar accounts access"
+      ],
+      "responses": [
+        "Lebanon banking strategy: 1. Withdraw max allowed USD monthly 2. Diversify banks 3. Use digital wallets (OMT) 4. Store physical USD/gold 🇱🇧"
+      ]
+    },
+    {
+      "tag": "lebanon_currency",
+      "patterns": [
+        "Protect against LBP crash",
+        "USD access Lebanon",
+        "Parallel exchange rates",
+        "Hyperinflation strategy"
+      ],
+      "responses": [
+        "Lebanon currency survival: 1. Hold physical USD 2. Use USD stablecoins (USDT) 3. Invest in skills for remote USD work 4. Avoid LBP savings 💵"
+      ]
+    },
+    {
+      "tag": "zero_based_budget",
+      "patterns": [
+        "Create zero-based budget",
+        "Allocate every dollar",
+        "Envelope system explanation",
+        "Budgeting tools"
+      ],
+      "responses": [
+        "Before each month: Assign EVERY dollar a job! Use apps like WisePockets or cash envelopes. Lebanon: Budget in USD equivalents 📝"
+      ]
+    },
+    {
+      "tag": "financial_mindset",
+      "patterns": [
+        "Live like no one else meaning",
+        "Overcome lifestyle inflation",
+        "Gazelle intensity definition",
+        "Sacrifice now for freedom"
+      ],
+      "responses": [
+        "Sacrifice short-term comforts for long-term freedom! 'Winning with money is 80% behavior, 20% knowledge.' 🐆"
+      ]
+    },
+    {
+      "tag": "side_hustles",
+      "patterns": [
+        "Make extra money",
+        "Side jobs for debt payoff",
+        "Quick cash sources",
+        "Sell items online"
+      ],
+      "responses": [
+        "Boost income with: 1. Delivery services 2. Freelance skills 3. Sell unused items 4. Lebanon: Dollar tutoring/translation services 🔥"
+      ]
+    },
+    {
+      "tag": "ramsey_quotes",
+      "patterns": [
+        "Inspirational money quote",
+        "Dave Ramsey motto",
+        "Financial peace saying",
+        "Favorite Ramsey phrase"
+      ],
+      "responses": [
+        "'Act your wage!'",
+        "'Rice and beans, beans and rice'",
+        "'Debt is dumb. Cash is king.'"
+      ]
+    },
+    {
+      "tag": "crisis_handling",
+      "patterns": [
+        "Job loss what now?",
+        "Medical emergency costs",
+        "Financial setback recovery",
+        "I lost my job"
+      ],
+      "responses": [
+        "Pause Baby Steps → Cover NECESSITIES → Rebuild emergency fund → Restart. Lebanon tip: Keep emergency gold ⚠️"
+      ]
+    }
+  ]
+}
